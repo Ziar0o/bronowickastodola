@@ -1,0 +1,152 @@
+/* Base styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Global styles */
+.menu-section {
+    padding-top: 10vh;
+    max-width: 90vw;
+    margin: 0 auto 3rem;
+}
+
+.menu-section h2 {
+    font-family: 'Allura', cursive;
+    font-size: 2.6rem;
+    text-align: center;
+    margin: 0 0 1.2rem;
+    color: var(--zloty);
+    letter-spacing: 1px;
+}
+
+.dish {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: .6rem 0;
+    padding: 0 .5rem;
+}
+
+.dish-name {
+    font-weight: 500;
+    color: var(--zloty);
+}
+
+.dish-desc {
+    flex: 1;
+    margin: 0 .8rem;
+    font-size: .9rem;
+    color: var(--szary-opis);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dish-price {
+    font-weight: 500;
+    color: var(--zloty);
+}
+
+.dish+.dish {
+    border-top: 1px solid var(--szary-cien);
+    padding-top: .6rem;
+}
+
+
+/* Gallery section */
+.gallery-nag {
+    font-size: 2.6rem;
+    text-align: center;
+    margin: 0 0 1.2rem;
+    color: var(--zloty);
+    letter-spacing: 1px;
+}
+
+.gallery-wrap {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 2rem;
+}
+
+.gallery-wrap img {
+    scroll-snap-align: start;
+    max-width: 90vw;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.arrow {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+}
+
+/* Parties section */
+.partiesH3 {
+    font-size: 2.6rem;
+    text-align: center;
+    margin: 0 0 1.2rem;
+    color: var(--zloty);
+    letter-spacing: 1px;
+}
+
+.partiesSpan {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Contact section */
+
+.contactTitle {
+    font-size: 2.6rem;
+    text-align: center;
+    margin: 0 0 1.2rem;
+    color: var(--zloty);
+    letter-spacing: 1px;
+}
+
+.contactInfo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contactInfo a {
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* Ukryj menu na telefonach i tabletach */
+@media (max-width: 1024px) {
+    .navList {
+        display: none !important; /* Zawsze ukryj menu */
+    }
+}
+
+/* Opinie - jedna opinia, 90% szerokości, 65% wysokości */
+@media (max-width: 1024px) {
+    .contact {
+    margin-top: 2rem; /* 2rem odstępu */
+}
+    .partys {
+        margin-bottom: 10vh;
+    }
+}
+
+@media (max-width: 767px){
+    body {
+        overflow-x: hidden;
+    }
+  section{
+    text-align:center !important;
+  }
+  section *{
+    text-align:center !important;
+  }
+}

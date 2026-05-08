@@ -1,0 +1,64 @@
+.navigationBar {
+    position: fixed;
+    z-index: 1000;
+    color: #D4AF37;
+    background-color: #F5F5F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100px;
+}
+.navList {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.navList li {
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+h1 {
+    padding-top: 1rem;
+    font-size: 40px;
+    font-family: "Allura", cursive;
+}
+li:hover {
+    scale: calc(1.2);
+    transition: 0.5s;
+}
+li:active {
+    scale: calc(1.1);
+    transition: 0.1s;
+}
+.infoNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navP {
+    position: absolute;
+    top: 0;
+}
+.navList a {
+    display: block;
+    padding: 1rem;
+    color: #000; /* Match existing nav text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navList a:hover {
+    color: var(--zloty); /* Match hover color from existing design */
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}

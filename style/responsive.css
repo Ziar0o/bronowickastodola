@@ -1,0 +1,200 @@
+/* Existing styles remain unchanged */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+    .navList {
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        width: 250px;
+        background: var(--tlo);
+        padding: 20px;
+        border: 1px solid var(--szary-cien);
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navList.active {
+        display: flex;
+    }
+
+    .navList li {
+        width: 100%;
+        text-align: right;
+    }
+
+    .navList a {
+        font-size: 1.1rem;
+        padding: 8px 0;
+        display: block;
+        width: 100%;
+    }
+
+    /* Hide default nav on mobile */
+    .navigationBar .infoNav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigationBar .navList {
+        display: none;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navigationBar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navList {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navList li {
+        margin: 8px 0;
+    }
+}
+@media (max-width: 768px) {
+    .restaurantName {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    .slogan {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+    
+    .concactUs {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-section {
+        padding-top: 5vh;
+    }
+    
+    .menu-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .dish {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .dish-name {
+        font-size: 1rem;
+    }
+    
+    .dish-desc {
+        font-size: 0.9rem;
+        margin-top: 0.25rem;
+    }
+    
+    .dish-price {
+        font-size: 0.95rem;
+        margin-top: 0.25rem;
+    }
+    
+    .dish+.dish {
+        border-top: 1px solid var(--szary-cien);
+        padding-top: 1rem;
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .gallery-nag {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .gallery-wrap {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .gallery-wrap img {
+        max-width: 90vw;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .arrow {
+        font-size: 1.2rem;
+        padding: 8px 12px;
+    }
+}
+@media (max-width: 768px) {
+    .partiesH3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .partiesSpan {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+@media (max-width: 768px) {
+    .contactTitle {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .contactInfo {
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .contactInfo a {
+        display: block;
+        margin-top: 0.5rem;
+    }
+}
+/* Add to existing media queries */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+    }
+    
+    .navigationBar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    
+    .infoNav {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .navList {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .navList li {
+        width: 100%;
+        text-align: center;
+    }
+    header {
+        width: 100%;
+    }
+    header span {
+        width: 80%;
+    }
+}

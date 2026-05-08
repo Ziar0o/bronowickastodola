@@ -1,0 +1,57 @@
+header {
+    padding-top: 2vh;
+    width: 100vw;
+    height: 80vh;
+    background-image: url(/photos/505587087_1361184305381430_6008334126323705990_n.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-size:cover;        /* wypełnia cały header */
+  background-position:center;
+  background-repeat:no-repeat;
+}
+h1 {
+    padding-top: 30px;
+}
+.restaurantName {
+    color: #D4AF37;
+    font-size: 4rem;
+    font-family: "Allura", cursive;
+}
+.slogan {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+}
+.concactUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #D4AF37;
+    border-style: none;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.6s;
+    margin-top: 2.5vh;
+    width: 150px;
+    height: 30px;
+}
+.concactUs:hover {
+    color: #ac8e2b;
+    transition: 0.6s;
+    border-radius: 30px;
+    width: 150px;
+    height: 30px;
+    background-color: #F5F5F1;
+}
+.concactUs:active {
+    scale: calc(1.1);
+    transition: 0.3s;
+}
+

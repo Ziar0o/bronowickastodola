@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stodoła Bronowice</title>
+
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/style/nav.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/opinions.css">
+    <link rel="stylesheet" href="/style/menu.css">
+    <link rel="stylesheet" href="/style/gallery.css">
+    <link rel="stylesheet" href="/style/party.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/aboutus.css">
+</head>
+
+<body>
+    <nav class="navigationBar">
+        <div class="infoNav">
+            <p class="navP">Pod Strzechą 16C, 33-332 Kraków</p>
+            <h1>BronowickaStodoła</h1>
+        </div>
+        <ul class="navList">
+            <li><a href="#header">Strona Główna</a></li>
+            <li><a href="#menu-section">Menu</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#partys">imprezy</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header id="header">
+        <h2 class="restaurantName">Bronowicka Stodoła</h2>
+        <span class="slogan">Stodoła Bronowicka – gdzie tradycja smakuje jak dzieło sztuki</span>
+        <button class="concactUs">Kontakt</button>
+    </header>
+
+    <section class="about-us">
+        <div class="about-inner">
+            <h2 class="about-heading">O nas</h2>
+            <p class="about-text">
+                Restauracja Stodoła Bronowicka – tylko kilka kroków od słynnej stodoły, w której
+                Stanisław Wyspiański uwiecznił <em>„Wesele”</em> – dzisiaj zaprasza na własne,
+                pachnące magią spotkanie. Tuż obok Rydlówki, wśród dębów i starych zabudowań, stoi
+                ponad stuletni spichlerz, który od lat 90. tętni życiem kulinarnym. Zachowaliśmy
+                jego ceglano-drewniany duch, dołożyliśmy dymiące kominy, polne zioła i receptury,
+                które pamiętają jeszcze przedwojenne karty menu. Nasz schabowy jest tak cienki,
+                że prawie śpiewa; żurek tak gęsty, że można go kroić; a placki ziemniaczane tak
+                chrupiące, jakby dopiero co wyskoczyły z bronowickiej ziemi.
+            </p>
+            <p class="about-slogan">„Stodoła Bronowicka – gdzie tradycja smakuje jak dzieło sztuki.”</p>
+        </div>
+    </section>
+
+    <section class="opinions">
+        <h2 class="opinionsH2">Opinie o Stodole</h2>
+        <div class="opinionContainer">
+            <div class="opinion">
+                <p class="opinionText">
+                    Bardzo klimatyczne i urokliwe miejsce!
+                    Pani Kelnerka o imieniu Magdalena, cudowna, miła i bardzo przyjemna.
+                    Przystawka
+                    -grillowany camembert z pesto - genialne.
+                    -zupa krem z cebuli z grzankami - rewelacja
+                    -żurek z kiełbasą i puree -świetny
+                    -kotlet devolay - chrupki i przepyszny!
+                    Zastanawiałam się dzisiaj jaką mam ulubioną restaurację w Krakowie i nie miałam jej aż do dzisiaj♥️
+                    Spokój + dodatkowym atutem są nisko latające samoloty ✈️ nad restauracją.
+                </p>
+                <p class="opinionRaiting">
+                    Jedzenie: 5/5 | Obsługa: 5/5 | Klimat: 5/5
+                </p>
+            </div>
+            <div class="opinion">
+                <p class="opinionText">Autentyczne miejsce z fantastyczną kuchnią i bardzo sympatyczną obsługą, która doskonale potrafi doradzić dania. Byliśmy tu już wiele razy i za każdym razem byliśmy bardzo zadowoleni. Na pewno tu wrócimy.</p>
+                <p class="opinionRaiting">
+                    Jedzenie: 5/5 | Obsługa: 5/5 | Klimat: 5/5
+                </p>
+            </div>
+            <div class="opinion">
+                <p class="opinionText">Jestem zachwycona....Takie cudne miejsce, odkryte zupełnym przypadkiem. Nasze powroty tutaj już natomiast nie są przypadkowe. Wiemy, że tu kuchnia i obsługa nigdy nie zawiedzie. Wracamy jak do domu, a nie jest to trudne bo mieszkamy prawie po sąsiedzku. Polecam wszystkim bo każde danie zasługuje tu na uwagę, i nie sposób wyjść o pustym żołądku ⭐⭐⭐⭐⭐</p>
+                <p class="opinionRaiting">
+                    Jedzenie: 5/5 | Obsługa: 5/5 | Klimat: 5/5
+                </p>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="arrow-btn" onclick="slide(-1)">‹</button>
+            <button class="arrow-btn" onclick="slide(1)">›</button>
+        </div>
+    </section>
+
+    <section id="menu-section">
+  <h2>Menu</h2>
+
+  <h3 class="category">Przystawki</h3>
+  <div class="dish"><span class="dish-name">Grillowany camembert z pesto ziołowym</span><span class="dish-desc"></span><span class="dish-price">30 zł</span></div>
+  <div class="dish"><span class="dish-name">Tatar z polędwicy wołowej</span><span class="dish-desc"></span><span class="dish-price">70 zł</span></div>
+  <div class="dish"><span class="dish-name">Mozzarella z pomidorem, bazylią i oliwą</span><span class="dish-desc"></span><span class="dish-price">26 zł</span></div>
+
+  <h3 class="category">Zupy – ok. 250 ml</h3>
+  <div class="dish"><span class="dish-name">Rosół z makaronem</span><span class="dish-desc"></span><span class="dish-price">18 zł</span></div>
+  <div class="dish"><span class="dish-name">Rosół solo</span><span class="dish-desc"></span><span class="dish-price">13 zł</span></div>
+  <div class="dish"><span class="dish-name">Barszcz czerwony z krokiem lub uszkami</span><span class="dish-desc"></span><span class="dish-price">26 zł</span></div>
+  <div class="dish"><span class="dish-name">Barszcz czerwony solo</span><span class="dish-desc"></span><span class="dish-price">15 zł</span></div>
+  <div class="dish"><span class="dish-name">Żurek z kiełbasą i purée ziemniaczanym</span><span class="dish-desc"></span><span class="dish-price">27 zł</span></div>
+  <div class="dish"><span class="dish-name">Krem cebulowy z grzankami</span><span class="dish-desc"></span><span class="dish-price">24 zł</span></div>
+  <div class="dish"><span class="dish-name">Krem dyniowy z grzankami i pestkami dyni (sezon jesienno-zimowy)</span><span class="dish-desc"></span><span class="dish-price">25 zł</span></div>
+  <div class="dish"><span class="dish-name">Chłodnik litewski (sezon letni)</span><span class="dish-desc"></span><span class="dish-price">26 zł</span></div>
+
+  <h3 class="category">Drugie dania</h3>
+  <div class="dish"><span class="dish-name">Kotlet schabowy z ziemniakami i zasmażaną kapustą</span><span class="dish-desc">~400 g</span><span class="dish-price">40 zł</span></div>
+  <div class="dish"><span class="dish-name">Stek ze schabu z sosem pieczeniowym, ziemniakami i ćwikłą</span><span class="dish-desc">~400 g</span><span class="dish-price">45 zł</span></div>
+  <div class="dish"><span class="dish-name">Grillowany filet z kurczaka z ziemniakami i surówką colesław</span><span class="dish-desc">~400 g</span><span class="dish-price">38 zł</span></div>
+  <div class="dish"><span class="dish-name">Filet z kurczaka panierowany chipsami z ziemniakami i surówką colesław</span><span class="dish-desc">~400 g</span><span class="dish-price">42 zł</span></div>
+  <div class="dish"><span class="dish-name">Filet z kurczaka po sycylijsku z ziemniakami i miksem sałat</span><span class="dish-desc">~400 g</span><span class="dish-price">45 zł</span></div>
+  <div class="dish"><span class="dish-name">Grillowana polędwiczka wieprzowa z sosem francuskim, z ziemniakami i miksem sałat</span><span class="dish-desc">~400 g</span><span class="dish-price">53 zł</span></div>
+  <div class="dish"><span class="dish-name">Devolay z ziemniakami i surówką colesław</span><span class="dish-desc">~400 g</span><span class="dish-price">45 zł</span></div>
+  <div class="dish"><span class="dish-name">Placki po węgiersku z gulaszem wieprzowym</span><span class="dish-desc">~400 g</span><span class="dish-price">43 zł</span></div>
+  <div class="dish"><span class="dish-name">Placki ziemniaczane solo</span><span class="dish-desc">~250 g</span><span class="dish-price">28 zł</span></div>
+  <div class="dish"><span class="dish-name">Stek wołowy z masłem czosnkowym z opiekanymi ćwiartkami ziemniaków i miksem sałat</span><span class="dish-desc">~500 g</span><span class="dish-price">75 zł</span></div>
+  <div class="dish"><span class="dish-name">Stek wołowy z sosem z zielonego pieprzu z opiekanymi ćwiartkami ziemniaków i miksem sałat</span><span class="dish-desc">~500 g</span><span class="dish-price">78 zł</span></div>
+  <div class="dish"><span class="dish-name">Burger wołowy z frytkami i surówką colesław</span><span class="dish-desc">~450 g</span><span class="dish-price">53 zł</span></div>
+  <div class="dish"><span class="dish-name">Pstrąg z grillowanymi warzywami i opiekanymi ćwiartkami ziemniaków</span><span class="dish-desc">~450 g</span><span class="dish-price">60 zł</span></div>
+  <div class="dish"><span class="dish-name">Łosoś z kaszą jaglaną i pappardelle z cukinii i marchwi</span><span class="dish-desc">~450 g</span><span class="dish-price">60 zł</span></div>
+  <div class="dish"><span class="dish-name">Łosoś w sosie kaparowym z ziemniakami i warzywami na parze</span><span class="dish-desc">~450 g</span><span class="dish-price">63 zł</span></div>
+
+  <h3 class="category">Sałatki – ok. 350 g</h3>
+  <div class="dish"><span class="dish-name">Sałatka grecka polana sosem ogrodowym</span><span class="dish-desc"></span><span class="dish-price">35 zł</span></div>
+  <div class="dish"><span class="dish-name">Sałatka z kurczakiem polana sosem czosnkowym</span><span class="dish-desc"></span><span class="dish-price">38 zł</span></div>
+
+  <h3 class="category">Pierogi – 10 sztuk</h3>
+  <div class="dish"><span class="dish-name">Pierogi ruskie</span><span class="dish-desc"></span><span class="dish-price">35 zł</span></div>
+  <div class="dish"><span class="dish-name">Pierogi z mięsem</span><span class="dish-desc"></span><span class="dish-price">40 zł</span></div>
+  <div class="dish"><span class="dish-name">Pierogi chłopskie</span><span class="dish-desc"></span><span class="dish-price">37 zł</span></div>
+  <div class="dish"><span class="dish-name">Pierogi ze szpinakiem i fetą</span><span class="dish-desc"></span><span class="dish-price">38 zł</span></div>
+
+  <h3 class="category">Naleśniki – 2 sztuki</h3>
+  <div class="dish"><span class="dish-name">Naleśniki wegetariańskie z warzywami polane sosem czosnkowym</span><span class="dish-desc"></span><span class="dish-price">33 zł</span></div>
+  <div class="dish"><span class="dish-name">Naleśniki ze szpinakiem i serem feta polane sosem czosnkowym</span><span class="dish-desc"></span><span class="dish-price">36 zł</span></div>
+  <div class="dish"><span class="dish-name">Naleśniki z kremem czekoladowym i owocami</span><span class="dish-desc"></span><span class="dish-price">30 zł</span></div>
+
+  <h3 class="category">Makarony – ok. 450 g</h3>
+  <div class="dish"><span class="dish-name">Makaron z kurczakiem w sosie pomidorowym</span><span class="dish-desc"></span><span class="dish-price">39 zł</span></div>
+  <div class="dish"><span class="dish-name">Makaron z kurczakiem w sosie ziołowym</span><span class="dish-desc"></span><span class="dish-price">38 zł</span></div>
+  <div class="dish"><span class="dish-name">Makaron z borowikami w sosie śmietanowym</span><span class="dish-desc"></span><span class="dish-price">42 zł</span></div>
+  <div class="dish"><span class="dish-name">Makaron ze szpinakiem i serem feta</span><span class="dish-desc"></span><span class="dish-price">40 zł</span></div>
+
+  <h3 class="category">Dodatki</h3>
+  <div class="dish"><span class="dish-name">Frytki</span><span class="dish-desc"></span><span class="dish-price">15 zł</span></div>
+  <div class="dish"><span class="dish-name">Zestaw surówek</span><span class="dish-desc"></span><span class="dish-price">16 zł</span></div>
+  <div class="dish"><span class="dish-name">Pieczywo</span><span class="dish-desc"></span><span class="dish-price">3 zł</span></div>
+  <div class="dish"><span class="dish-name">Ketchup / majonez / śmietana</span><span class="dish-desc"></span><span class="dish-price">2 zł</span></div>
+
+  <h3 class="category">Desery</h3>
+  <div class="dish"><span class="dish-name">Szarlotka na ciepło z gałką lodów waniliowych</span><span class="dish-desc"></span><span class="dish-price">23 zł</span></div>
+  <div class="dish"><span class="dish-name">Sernik polany sosem owocowym</span><span class="dish-desc"></span><span class="dish-price">27 zł</span></div>
+  <div class="dish"><span class="dish-name">Puchar lodowy z owocami i bitą śmietaną</span><span class="dish-desc"></span><span class="dish-price">28 zł</span></div>
+  <div class="dish"><span class="dish-name">Racuchy z jabłkami z gałką lodów owocowych (sezon letni)</span><span class="dish-desc"></span><span class="dish-price">32 zł</span></div>
+
+  <h3 class="category">Napoje gorące</h3>
+  <div class="dish"><span class="dish-name">Espresso</span><span class="dish-desc"></span><span class="dish-price">13 zł</span></div>
+  <div class="dish"><span class="dish-name">Espresso doppio</span><span class="dish-desc"></span><span class="dish-price">20 zł</span></div>
+  <div class="dish"><span class="dish-name">Kawa czarna</span><span class="dish-desc"></span><span class="dish-price">15 zł</span></div>
+  <div class="dish"><span class="dish-name">Americano</span><span class="dish-desc"></span><span class="dish-price">16 zł</span></div>
+  <div class="dish"><span class="dish-name">Flat white</span><span class="dish-desc"></span><span class="dish-price">22 zł</span></div>
+  <div class="dish"><span class="dish-name">Kawa biała</span><span class="dish-desc"></span><span class="dish-price">18 zł</span></div>
+  <div class="dish"><span class="dish-name">Cappuccino / Latte</span><span class="dish-desc"></span><span class="dish-price">20 zł</span></div>
+  <div class="dish"><span class="dish-name">Herbata czarna / zielona / owocowa</span><span class="dish-desc"></span><span class="dish-price">12 zł</span></div>
+  <div class="dish"><span class="dish-name">Herbata jesienna</span><span class="dish-desc"></span><span class="dish-price">16 zł</span></div>
+
+  <h3 class="category">Napoje zimne</h3>
+  <div class="dish"><span class="dish-name">Woda 0,3 l</span><span class="dish-desc"></span><span class="dish-price">8 zł</span></div>
+  <div class="dish"><span class="dish-name">Woda 0,5 l</span><span class="dish-desc"></span><span class="dish-price">10 zł</span></div>
+  <div class="dish"><span class="dish-name">Pepsi / Pepsi Max / 7up / Tonic</span><span class="dish-desc"></span><span class="dish-price">10 zł</span></div>
+  <div class="dish"><span class="dish-name">Ice Tea brzoskwiniowa / cytrynowa</span><span class="dish-desc"></span><span class="dish-price">10 zł</span></div>
+  <div class="dish"><span class="dish-name">Kawa mrożona z gałką lodów waniliowych i bitą śmietaną</span><span class="dish-desc"></span><span class="dish-price">22 zł</span></div>
+  <div class="dish"><span class="dish-name">Lemoniada cytrynowo-miętowa (sezon letni)</span><span class="dish-desc"></span><span class="dish-price">16 zł</span></div>
+  <div class="dish"><span class="dish-name">Sok jabłkowy / pomarańczowy / z czarnej porzeczki</span><span class="dish-desc"></span><span class="dish-price">10 zł</span></div>
+  <div class="dish"><span class="dish-name">Karafka wody 1 l</span><span class="dish-desc"></span><span class="dish-price">18 zł</span></div>
+  <div class="dish"><span class="dish-name">Karafka soku 1 l</span><span class="dish-desc"></span><span class="dish-price">30 zł</span></div>
+
+  <h3 class="category">Piwo lane Żywiec</h3>
+  <div class="dish"><span class="dish-name">Piwo duże 0,5 l</span><span class="dish-desc"></span><span class="dish-price">17 zł</span></div>
+  <div class="dish"><span class="dish-name">Piwo małe 0,3 l</span><span class="dish-desc"></span><span class="dish-price">15 zł</span></div>
+  <div class="dish"><span class="dish-name">Sok do piwa</span><span class="dish-desc"></span><span class="dish-price">2 zł</span></div>
+
+  <h3 class="category">Piwo butelkowe 0,5 l</h3>
+  <div class="dish"><span class="dish-name">Złoty Bażant / Holba / Litovel Premium / Budvar</span><span class="dish-desc"></span><span class="dish-price">20 zł</span></div>
+  <div class="dish"><span class="dish-name">Litovel Pszeniczny / Żywiec Biały</span><span class="dish-desc"></span><span class="dish-price">20 zł</span></div>
+  <div class="dish"><span class="dish-name">Litovel Ciemny Citron</span><span class="dish-desc"></span><span class="dish-price">20 zł</span></div>
+  <div class="dish"><span class="dish-name">Desperados</span><span class="dish-desc"></span><span class="dish-price">20 zł</span></div>
+  <div class="dish"><span class="dish-name">Cydr Dzik</span><span class="dish-desc"></span><span class="dish-price">17 zł</span></div>
+
+  <h3 class="category">Piwo bezalkoholowe (0-0,5 ‰) 0,5 l</h3>
+  <div class="dish"><span class="dish-name">Holba</span><span class="dish-desc"></span><span class="dish-price">20 zł</span></div>
+  <div class="dish"><span class="dish-name">Litovel Ciemny Citron</span><span class="dish-desc"></span><span class="dish-price">20 zł</span></div>
+  <div class="dish"><span class="dish-name">Smakowe Żywiec: Malinaż, Miętaż, Lemonż, Lipa & pigwa, Bez & jabłko</span><span class="dish-desc"></span><span class="dish-price">20 zł</span></div>
+  <div class="dish"><span class="dish-name">Żywiec Biały</span><span class="dish-desc"></span><span class="dish-price">20 zł</span></div>
+
+  <h3 class="category">Wino gruzińskie</h3>
+  <div class="dish"><span class="dish-name">Lampka białego lub czerwonego / półwytrawnego lub wytrawnego</span><span class="dish-desc"></span><span class="dish-price">16 zł</span></div>
+  <div class="dish"><span class="dish-name">Butelka wina</span><span class="dish-desc"></span><span class="dish-price">100 zł</span></div>
+
+  <h3 class="category">Grzańce</h3>
+  <div class="dish"><span class="dish-name">Grzane piwo z sokiem, cynamonem i goździkami</span><span class="dish-desc"></span><span class="dish-price">20 zł</span></div>
+  <div class="dish"><span class="dish-name">Grzane wino z pomarańczą i goździkami</span><span class="dish-desc"></span><span class="dish-price">19 zł</span></div>
+
+  <h3 class="category">Shoty</h3>
+  <div class="dish"><span class="dish-name">Shot czystej wódki / wiśniówki / żubrówki</span><span class="dish-desc"></span><span class="dish-price">9 zł</span></div>
+  <div class="dish"><span class="dish-name">Shot Jägermeistera</span><span class="dish-desc"></span><span class="dish-price">12 zł</span></div>
+
+  <h3 class="category">Drinki</h3>
+  <div class="dish"><span class="dish-name">Późny wieczór (whisky, pepsi)</span><span class="dish-desc"></span><span class="dish-price">30 zł</span></div>
+  <div class="dish"><span class="dish-name">Whisky z lodem</span><span class="dish-desc"></span><span class="dish-price">20 zł</span></div>
+  <div class="dish"><span class="dish-name">Jager Currant (Jägermeister, sok z czarnej porzeczki)</span><span class="dish-desc"></span><span class="dish-price">30 zł</span></div>
+  <div class="dish"><span class="dish-name">Gin z tonikiem</span><span class="dish-desc"></span><span class="dish-price">30 zł</span></div>
+  <div class="dish"><span class="dish-name">Paradise Bay (sok pomarańczowy, grenadyna, blue curaçao, wódka)</span><span class="dish-desc"></span><span class="dish-price">30 zł</span></div>
+  <div class="dish"><span class="dish-name">Mojito (rum, woda gazowana, mięta, limonka, cukier trzcinowy)</span><span class="dish-desc"></span><span class="dish-price">30 zł</span></div>
+  <div class="dish"><span class="dish-name">Mojito 0‰</span><span class="dish-desc"></span><span class="dish-price">20 zł</span></div>
+</section>
+
+    <section id="gallery">
+        <h2 class="gallery-nag">Bronowicka Stodoła Galeria</h2>
+        <div class="gallery-wrap">
+            <div class="gallery-track" id="track">
+                <div class="gallery-slide"><img src="/photos/376562891_879753026857896_7510059062739146092_n.webp"></div>
+                <div class="gallery-slide"><img src="/photos/491168202_1308634177303110_2693000454370082924_n.webp"></div>
+                <div class="gallery-slide"><img src="/photos/505587087_1361184305381430_6008334126323705990_n.webp"></div>
+                <div class="gallery-slide"><img src="/photos/505678233_1361184385381422_7940980432610773207_n.webp"></div>
+                <div class="gallery-slide"><img src="/photos/506683766_1361184352048092_1457182955479792601_n.webp"></div>
+                <div class="gallery-slide"><img src="/photos/555617236_1453459372820589_660251730755896323_n.webp"></div>
+            </div>
+            <button class="gal-arrow gal-prev" onclick="galMove(-1)">‹</button>
+            <button class="gal-arrow gal-next" onclick="galMove(1)">›</button>
+        </div>
+    </section>
+
+    <section id="partys">
+        <h3 class="partiesH3">Bronowicka Stodoła - Imprezy Okolicznościowe</h3>
+        <span class="partiesSpan">
+            Jeżeli chcesz zerezerwować impreze grupową, prosimy o Kontakt:<br>
+            Numer Telefonu:501 429 936<br>
+            Email: restauracja.stodola@interia.pl
+        </span>
+    </section>
+
+    <section id="contact">
+        <h2 class="contactTitle">Kontakt</h2>
+        <div class="contactInfo">
+            <p><strong>Telefon:</strong> <a href="tel:+48501429936">501 429 936</a></p>
+            <p><strong>Email:</strong> <a href="mailto:restauracja.stodola@interia.pl">restauracja.stodola@interia.pl</a></p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <section class="footer-col">
+                <h3 class="footer-heading">Kontakt</h3>
+                <p>Pod Strzechą 16C<br>Kraków</p>
+                <a class="footer-link" href="tel:+48501429936">+48 501 429 936</a><br>
+                <a class="footer-link" href="mailto:restauracja.stodola@interia.pl">restauracja.stodola@interia.pl</a>
+            </section>
+
+            <section class="footer-col">
+                <h3 class="footer-heading">Social Media</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100044696210652" aria-label="Facebook">f</a>
+                </div>
+            </section>
+
+            <section class="footer-col">
+                <h3 class="footer-heading">Godziny otwarcia</h3>
+                <p>wt-nd 12:00 - 20:00</p>
+            </section>
+        </div>
+
+        <div class="footer-bar">
+            <p>&copy; <span id="year"></span> Bronowicka Stodoła. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script>
+        /* ========== GALERIA – 1 zdjęcie ========== */
+        const track = document.getElementById('track');
+        let gIdx = 0;
+
+        function galMove(dir) {
+            gIdx = (gIdx + dir + track.children.length) % track.children.length;
+            track.style.transform = `translateX(-${gIdx * 100}%)`;
+        }
+
+        /* auto-przewijanie co 5 s (tylko na telefon/tablet) */
+        let autoGal = null;
+        if (window.matchMedia('(max-width:1024px)').matches) {
+            autoGal = setInterval(() => galMove(1), 5000);
+        }
+
+        /* pauza auto gdy użytkownik kliknie / dotknie */
+        track.parentElement.addEventListener('mousedown', () => clearInterval(autoGal));
+        track.parentElement.addEventListener('touchstart', () => clearInterval(autoGal));
+
+        /* gesty myszką / dotykiem */
+        let startX = 0;
+        track.parentElement.addEventListener('mousedown', e => startX = e.clientX);
+        track.parentElement.addEventListener('mouseup', e => {
+            if (e.clientX < startX - 30) galMove(1);
+            if (e.clientX > startX + 30) galMove(-1);
+        });
+        track.parentElement.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+        track.parentElement.addEventListener('touchend', e => {
+            const endX = e.changedTouches[0].clientX;
+            if (endX < startX - 30) galMove(1);
+            if (endX > startX + 30) galMove(-1);
+        });
+
+        /* ========== OPINIE – slider ========== */
+        function slide(dir) {
+            const cont = document.querySelector('.opinionContainer');
+            const card = cont.querySelector('.opinion');
+            const jump = card.clientWidth + parseFloat(getComputedStyle(card).marginLeft) * 2;
+            cont.scrollBy({ left: dir * jump, behavior: 'smooth' });
+        }
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

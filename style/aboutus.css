@@ -1,0 +1,51 @@
+.about-us{
+  padding:3rem 1.5rem;
+  background:#2B2B2B;
+  color:#FAFAFA;
+  text-align:center;
+}
+.about-inner{
+  max-width:900px;
+  margin:0 auto;
+  padding:0 1rem;
+}
+.about-heading{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(1.5rem, 4vw, 2.2rem);
+  text-transform:uppercase;
+  position:relative;
+  display:inline-block;
+  margin:0 0 2rem;
+}
+.about-heading::before,
+.about-heading::after{
+  content:'❦';
+  color:var(--zloty);
+  font-size:1.1em;
+  text-shadow:var(--cien);
+  margin:0 .6em;
+}
+.about-text{
+  font-size:clamp(1rem, 2.5vw, 1.15rem);
+  line-height:1.8;
+  margin:0 0 1.5rem;
+  text-align:justify;
+  text-align-last:center;
+}
+.about-slogan{
+  font-family:'Allura',cursive;
+  font-size:clamp(1.5rem, 5vw, 2rem);
+  color:var(--zloty);
+  margin:0;
+  text-shadow:var(--cien);
+}
+
+/* ========== RWD – TABLET I TELEFON ========== */
+@media(max-width:768px){
+  .about-us{padding:2.5rem 1rem;}
+  .about-text{text-align:center;}
+}
+@media(max-width:480px){
+  .about-heading::before,
+  .about-heading::after{display:none;} /* mniej ozdób na wąskim ekranie */
+}

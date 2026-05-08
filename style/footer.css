@@ -1,0 +1,69 @@
+.site-footer{
+  background:#2B2B2B;
+  color:#FAFAFA;
+  font-family:'Playfair Display',serif;
+  padding:3rem 1.5rem 0;
+  text-align:center;
+}
+.footer-inner{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  gap:2rem;
+  max-width:1200px;
+  margin:0 auto;
+}
+.footer-col{
+  flex:1 1 250px;
+}
+.footer-heading{
+  font-size:1.25rem;
+  margin:0 0 .75rem;
+  color:var(--zloty);
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.footer-link{
+  color:#FAFAFA;
+  text-decoration:none;
+  border-bottom:1px solid transparent;
+  transition:border-color .3s;
+}
+.footer-link:hover{
+  border-bottom-color:var(--zloty);
+}
+.social-icons{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  margin-top:.5rem;
+}
+.social-icons a{
+  display:inline-block;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  background:var(--zloty);
+  color:#2B2B2B;
+  border-radius:50%;
+  font-weight:bold;
+  text-decoration:none;
+  transition:background .3s;
+}
+.social-icons a:hover{
+  background:#b89735;
+}
+.footer-bar{
+  margin-top:2.5rem;
+  padding:1rem 0;
+  font-size:.8rem;
+  border-top:1px solid rgba(212,175,55,.25);
+  color:rgba(250,250,250,.7);
+}
+
+@media(max-width:600px){
+    .slogan {
+        flex-wrap: wrap;
+    }
+  .footer-inner{flex-direction:column;text-align:center;}
+}

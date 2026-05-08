@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:wght@500&display=swap');
+:root{
+  --zloty:#D4AF37;
+  --cien:1px 1px 3px rgba(0,0,0,.25);
+}
+
+.opinions{
+  padding:3rem 1.5rem;
+  background:#2B2B2B;
+  color:#FAFAFA;
+  text-align:center;
+}
+.opinionsH2{
+  font-family:'Playfair Display',serif;
+  font-size: 180%;
+  text-transform:uppercase;
+  position:relative;
+  display:inline-block;
+  margin:0 0 2rem;
+}
+.opinionsH2::before,
+.opinionsH2::after{
+  content:'❦';
+  color:var(--zloty);
+  font-size:1.1em;
+  text-shadow:var(--cien);
+  margin:0 .6em;
+}
+
+.opinionContainer{
+  display:flex;
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+  gap:0;
+}
+.opinionContainer::-webkit-scrollbar{display:none}
+
+.opinion{
+  flex:0 0 85%;
+  scroll-snap-align:center;
+  margin:0 7.5%;
+  background:#FAFAFA;
+  color:#4A4A4A;
+  border-left:4px solid var(--zloty);
+  border-radius:6px;
+  box-shadow:0 3px 8px rgba(0,0,0,.1);
+  padding:1.5rem;
+  overflow-wrap:break-word;
+  height:auto;
+}
+.opinionText{margin:0 0 1rem}
+.opinionRaiting{
+  padding-top:2.5%;
+  font-weight:700;
+  color:var(--zloty);
+}
+
+/* ========== strzałki (tylko myszka) ========== */
+.slider-nav{
+  display:flex;
+  justify-content:center;
+  gap:1rem;
+  margin-top:1.5rem;
+}
+.arrow-btn{
+  background:var(--zloty);
+  color:#FAFAFA;
+  border:none;
+  width:44px;
+  height:44px;
+  font-size:1.8rem;
+  border-radius:50%;
+  cursor:pointer;
+  box-shadow:0 2px 6px rgba(0,0,0,.3);
+  transition: .3s;
+}
+.arrow-btn:hover{background:#b89735}
+
+/* ukryj strzałki na ekranach dotykowych */
+@media (pointer:coarse){
+  .slider-nav{display:none}
+}
+
+
